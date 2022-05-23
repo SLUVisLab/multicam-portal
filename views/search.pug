@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  form(method='POST' action='')
+    div.form-group
+      label(for='site') Site:
+      input#site.form-control(type='text', placeholder='enter site here', name='site', value=(undefined===site ? '' : site))
+      button.btn.btn-primary(type='submit') Search 
+  
+  if errors
+    ul 
+      for error in errors
+        li!= error.msg
