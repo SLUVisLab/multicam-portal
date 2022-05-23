@@ -1,3 +1,10 @@
+const fs = require('firebase-admin')
+const serviceAccount = require('./bii-multi-cam-f11f7e8aad64.json')
+
+fs.initializeApp({
+  credential: fs.credential.cert(serviceAccount)
+ });
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');

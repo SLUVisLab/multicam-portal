@@ -1,8 +1,10 @@
+const fs = require('firebase-admin')
+const db = fs.firestore();
 const { body,validationResult } = require('express-validator');
 
 
 // Search Firestore DB.
-// express-validator accepts an array of three functions
+// express-validator accepts an array of functions
 exports.image_search = [
     //function1: 
     //validate and sanitize user inputs
@@ -30,6 +32,12 @@ exports.image_search = [
             //Pull data from firestore!
             console.log("Making request to firestore...")
             console.log(`site: ${req.body.site}`)
+            var results = db.collection('images').where('siteId', '==', req.body.site).get()
+                .then(items => {
+                    items.forEach(item => {
+                    console.log(item);
+                    });
+                });
             res.redirect("/search");
         }
     }
