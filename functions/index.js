@@ -1,8 +1,9 @@
-const fs = require('firebase-admin')
+const firebase = require('firebase-admin')
+const functions = require('firebase-functions');
 const serviceAccount = require('./bii-multi-cam-f11f7e8aad64.json')
 
-fs.initializeApp({
-  credential: fs.credential.cert(serviceAccount)
+firebase.initializeApp({
+  credential: firebase.credential.cert(serviceAccount)
  });
 
 var createError = require('http-errors');
@@ -45,4 +46,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+exports.app = functions.https.onRequest(app);
