@@ -6,6 +6,16 @@ block content
     div.form-group
       label(for='site') Site:
       input#site.form-control(type='text', placeholder='enter site here', name='site', value=(undefined===site ? '' : site))
+      br
+      label(for='block') Block:
+      input#block.form-control(type='text', placeholder='enter block here', name='block', value=(undefined===block ? '' : block))
+      br
+      label(for='beforeDate') Before:
+      input#beforeDate.form-control(type='date', name='beforeDate')
+      br
+      label(for='afterDate') After:
+      input#afterDate.form-control(type='date', name='afterDate')
+      br
       button.btn.btn-primary(type='submit') Search 
   
   if errors
