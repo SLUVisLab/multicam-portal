@@ -2,14 +2,14 @@ extends layout
 
 block content
   h1= title
-  form(method='POST' action='')
+  form(method='POST' action='', id='searchForm')
     div.form-group
-      label(for='site') Site:
-      input#site.form-control(type='text', placeholder='required', name='site', value=(undefined===site ? '' : site))
+      label(for= 'site') Site:
+      select(name='site', form= 'searchForm', id= 'site')
       br
-      label(for='block') Block:
-      input#block.form-control(type='text', placeholder='optional', name='block', value=(undefined===block ? '' : block))
-      br    
+      label(for= 'block') Block:
+      select(name='block', form= 'searchForm', id= 'block')
+      br
       label(for='afterDate') After:
       input#afterDate.form-control(type='date', name='afterDate')
       br
@@ -17,8 +17,11 @@ block content
       input#beforeDate.form-control(type='date', name='beforeDate')
       br
       button.btn.btn-primary(type='submit') Search 
-  
+    
   if errors
     ul 
       for error in errors
         li!= error.msg
+
+
+

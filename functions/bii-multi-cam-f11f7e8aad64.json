@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bii-multi-cam",
+  "private_key_id": "f11f7e8aad644b6c6dabc442be2fbde212cbbb02",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC/Nxa6d9pNZ3iy\nks+tV2tVsyotVYYZ31oZ7pdhKoiUnbDuXgTQFJla27HlKalONOaZ9fEjyueEJjyJ\nJtIPq0RsrUQZ5TwQTI7FrC1ELxinv/cHTLvGGesHEfMtr4NYYA61tGsJ9QhLa+m/\nAigQpHe1BQRxphxK86+NZPMsufyxROlJW8p+G/bvrR03otGuJa/ORVVegPafLBRr\nlMCt63svSe6eU1sGXfCTh6kyt3rkoBaSi10ZK+PQM7JxmOUJU6vMrRWKea4wjcsv\nR8uIKqYtD8QuK8nJbkN+CDOBrG2sNaVgEYrCmsek6MfCayDdYWCG7/Atk3qBbA1D\nTGz2j2lnAgMBAAECggEAQIRVYmArI5/MbTA0609KM3XKvtYS86rVS1eh8xJ3V/Gm\n756AcDbrEWl8Kg63BeC6h+sgTEvbds6x8TLMgKXwZdzGVBhw/izepVq1QULExmDy\neB+PYcV/8/g9/UWxgwGSJQP1c7wd6tjD2wNewlLD4yuIttHtzOpQ6tvLYuV0GdlJ\nrtSdqkBoYjJOjoQwu6lPoHSGtYA7WHV4FpjFueLecPkyHN4uPXwYjQZCdAEgVlSd\nkfW2Revr0KthdIWr8/efJzYKnQML9wXKA7j2g/mdXtG0cRBtpgFx5t9/2UYn5k2W\nm+53l6oFEB81KAF04ptVBHVVqRB18RoR2brk8oUJHQKBgQDf9z/JCLxRMUwVzqbb\n7A94VxcsCmGKgzZRNtSv7YFEUX7vs/J6oO+M9jjoYNIZ8+mLQREjjNhZQurI74LJ\nkCN3JbTBnjpKcu9vaW6CI1TtAPC0aoPRu5i3R7zLLRWJI53EnakTXAg9kW0CKOdp\n7sZKZUmVGNFjhsuZ9HRBzem7fQKBgQDakKPVtb3mvhBxdAIz9sYg2LLiy1+9snKp\nhXfEor9Qcqx1wpoIIIsPPpjY6K9KwM6sEzHgXKe10guLw2FNIFC69fhntSTuJpGD\nYNCtIzy1szDzeO1TRXGpOIS9qZs0BF1nGb7MCi90Hk4UUmgBgusWyD25zn06jg5V\n6nezKB1lswKBgQCsf/YL9AN/kbWlcjZIWwgLSyDY1eIM2kUCxnWITyjqIs7e9r1D\nQCNhcd+g87m/LYNqsyHtPLUCAy1suDUG5FK8mTkgi6sf3miWaiEocOgfZ0L94rBG\n4POd7s31u3LD3r/MSRaJh6/9I75PFIwwpizp7ht/j87ulkrI+GR2ro9gzQKBgQDI\n+RMNYe5ajA5GpGuaKKIKdfgXfvZsUfgJVQbKMvREHw3hwq0sJ/B2dhLJ8TuuOxhP\nNd849TnpgFjJjUCdUMerAp4FjpWEvsYyzgVUDwC1+y1Z06o2Vbar6aJ1W82wyQqx\n0QSWTg9QcMVO/m9QZHeTHVFU10BjZVhdPBoRDSPq7QKBgQC/2xH0qWzsC4c+bFob\nkHmui1IPsVKcm/9/6VnTJFNribLGdp5vp0vFDg+LAvMIrmFzRY2+bw04UYcCX+ig\nPXLabMu1CSlGhd2m0xjAEsPvrZWbHF05LtOHSl4l+ZQotiqTN9o7WWr1vUTYkGvn\ndwCFzNqHSMKxknFA6gBlO4rIWg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "multi-cam-portal@bii-multi-cam.iam.gserviceaccount.com",
+  "client_id": "110570053873476246269",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/multi-cam-portal%40bii-multi-cam.iam.gserviceaccount.com"
+}

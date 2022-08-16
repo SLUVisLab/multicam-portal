@@ -1,6 +1,7 @@
 const firebase = require('firebase-admin')
 const db = firebase.firestore();
 const { body,validationResult } = require('express-validator');
+// fs not used anywhere??
 const fs = require('fs');
 const { Parser } = require('json2csv');
 
@@ -34,7 +35,7 @@ exports.image_search = [
         //extract validation errors from a request
         const errors = validationResult(req);
 
-        //extract data from the request
+        //extract data from the request for name generation
         var siteQuery = req.body.site;
         var blockQuery = req.body.block;
         var afterDate = req.body.afterDate;
