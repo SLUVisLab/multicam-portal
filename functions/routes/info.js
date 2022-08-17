@@ -5,6 +5,8 @@ const db = firebase.firestore();
 
 var info_controller = require('../controllers/infoController');
 
-router.get('/', info_controller.get_info);
+router.get('/sites', info_controller.get_sites);
+
+router.get('/sessions', info_controller.get_sessions);
 
 module.exports = router;
