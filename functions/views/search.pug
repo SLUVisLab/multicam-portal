@@ -1,34 +1,43 @@
 extends layout
 
 block content
-  h1= title
-  form(method='POST' action='', id='searchForm')
-    div.form-group
-      label(for= 'site') Site:
-      select(name='site', form= 'searchForm', id= 'site')
-      br
-      label(for= 'block') Block:
-      select(name='block', form= 'searchForm', id= 'block')
-      br
-      label(for='afterDate') After:
-      input#afterDate.form-control(type='date', name='afterDate')
-      br
-      label(for='beforeDate') Before:
-      input#beforeDate.form-control(type='date', name='beforeDate')
-      br
-      button.btn.btn-primary(type='submit') Search 
+  div.content
+    div.heading
+      h1.title= "MultiCam Data Portal"
+    form#search-form(method='POST' action='')
+      ul.form-group
+        li.form-row
+          label.input-label(for= 'site') Site:
+          select#site.input-field(name='site', form= 'search-form')
+
+        li.form-row
+          label.input-label(for= 'block') Block:
+          select#block.input-field(name='block', form= 'search-form')
+
+        li.form-row
+          label.input-label(for='afterDate') After:
+          input#afterDate.form-control.input-field(type='date', name='afterDate')
+
+        li.form-row
+          label.input-label(for='beforeDate') Before:
+          input#beforeDate.form-control.input-field(type='date', name='beforeDate')
+        br
+        li.form-row 
+          button#search-btn.btn.btn-primary(type='submit') Search 
+        if errors
+        ul.errors 
+          for error in errors
+            li!= error.msg
     
-  if errors
-    ul 
-      for error in errors
-        li!= error.msg
-  h3= "Recent Sessions"
-  table(id= 'sessions', style='width:100%', border='1')
-    tr(class= "table_header")
-      th= "Site"
-      th= "Block"
-      th= "Image Count"
-      th= "Time Recorded" 
+    br
+    div#sessions
+      h3.sessions-title= "Recent Sessions"
+      table#sessions-table(cellspacing= "0", border= "1")
+        tr.table-header
+          th= "Site"
+          th= "Block"
+          th= "Image Count"
+          th= "Time Recorded" 
 
 
 
