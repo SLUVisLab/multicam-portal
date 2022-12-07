@@ -25,9 +25,9 @@ block content
         li.form-row 
           button#search-btn.btn.btn-primary(type='submit') Search 
         if errors
-        ul.errors 
-          for error in errors
-            li!= error.msg
+          ul.errors 
+            for error in errors
+              li!= error.msg
     
     br
     div#sessions
