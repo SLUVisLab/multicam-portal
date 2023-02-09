@@ -15,7 +15,7 @@ Once installed, you can run a local instance of the data portal by navigating to
 `firebase emulators:start`
 
 ## Stack
-Data portal is build using Express.js, Pug template engine, and the Firebase Nodejs package. The app uses the pug template engine to render the search form and also provides API endpoints for querying image data or getting recent recording session metadata. 
+Data portal is built using Express.js, Pug template engine, and the Firebase library for Node. The app uses the pug template engine to render the search form and also provides API endpoints for querying image data or getting recent recording session metadata. 
 
 
 ## Resources
